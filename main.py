@@ -1,9 +1,8 @@
-def _2_or_3(numbers):
-    for num in numbers:
-        if num == 2 or num == 3:
-            return True
-    return False
+def list_to_dict(input_list):
+    # Используем генераторное выражение для создания словаря
+    result_dict = {index: value for index, value in enumerate(input_list)}
+    return result_dict
 
-my_list = [1, 4, 3, 5, 7]
-result = _2_or_3(my_list)
+my_list = ["Книга", "Яблоко", "Олег"]
+result = list_to_dict(my_list)
 print(result)
