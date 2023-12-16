@@ -1,10 +1,8 @@
 import random
 
-def generate():
-    random_numbers = []
-    for _ in range(6):
-        number = random.randint(30, 100)
-        random_numbers.append(number)
+def generate_random_numbers():
+    random_numbers = [random.randint(30, 100) for _ in range(6)]
     return random_numbers
-random_numbers = generate()
-print(random_numbers)
+
+result = generate_random_numbers()
+print(result)
